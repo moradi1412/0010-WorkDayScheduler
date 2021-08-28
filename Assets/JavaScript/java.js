@@ -1,22 +1,8 @@
 //getting the current date and display on the top
 var currentDate = moment().format('dddd MMM Do, YYYY HH:MM'); 
+//display the current date
 $("#currentDay").html(currentDate); 
 console.log(currentDate);
-
-
-//getting the data from the storage 
-$("#hour9 .description").val(localStorage.getItem("hour9"));
-$("#hour10 .description").val(localStorage.getItem("hour10"));
-$("#hour11 .description").val(localStorage.getItem("hour11"));
-$("#hour12 .description").val(localStorage.getItem("hour12"));
-$("#hour13 .description").val(localStorage.getItem("hour13"));
-$("#hour14 .description").val(localStorage.getItem("hour14"));
-$("#hour15 .description").val(localStorage.getItem("hour15"));
-$("#hour16 .description").val(localStorage.getItem("hour16"));
-$("#hour17 .description").val(localStorage.getItem("hour17"));
-
-//display the current date
-
 
 //getting only the hours for the color-coded 
 var rightNow = new Date ().getHours(); 
@@ -95,9 +81,8 @@ function timeFrame(){
     } else {
         $("#task17").addClass("future"); 
     }
-}; 
-
-
+};
+//Calling the function 
 timeFrame();
 
 $(".saveBtn").on("click", function() {
@@ -108,3 +93,14 @@ $(".saveBtn").on("click", function() {
     // save in localStorage
     localStorage.setItem(time,task);
 });
+
+//getting the data from the storage 
+$("#hour9 .description").val(localStorage.getItem("hour9"));
+$("#hour10 .description").val(localStorage.getItem("hour10"));
+$("#hour11 .description").val(localStorage.getItem("hour11"));
+$("#hour12 .description").val(localStorage.getItem("hour12"));
+$("#hour13 .description").val(localStorage.getItem("hour13"));
+$("#hour14 .description").val(localStorage.getItem("hour14"));
+$("#hour15 .description").val(localStorage.getItem("hour15"));
+$("#hour16 .description").val(localStorage.getItem("hour16"));
+$("#hour17 .description").val(localStorage.getItem("hour17"));
