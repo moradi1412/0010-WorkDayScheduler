@@ -22,142 +22,121 @@
     <p class="lead">A simple calendar app for scheduling your work day</p>
     <p id="currentDay" class="lead"></p>
   </header>
-  <div class="container">
+  <div class="container container-fluid time-block">
     <!-- Timeblocks go here -->
-    <div class="card time-block">
-      <div class="row">
-        <div class="col hour">
-          <h2>9:00</h2>
-        </div>
-        <div class="col-8">
-          <textarea class="description" name="taskTodo" id="TaskTodo" placeholder="TaskTodo" cols="50"
-            rows="1"></textarea>
-        </div>
-        <div class="col">
-          <button class="saveBtn" type="button" class="btn"><img src="./Assets/img/save.svg" alt=""></button>
-        </div>
+    <!-- 9:00 -->
+    <div class="input-group mb-3">
+      <div class="input-group-prepend row">
+        <span class="input-group-text hour">09:00</span>
+      </div>
+      <textarea value="" id="task9" type="text" cols="100" rows="2"
+        class="form-control description textarea"></textarea>
+      <div class="input-group-append">
+        <button id="button10" class="btn btn-outline-secondary saveBtn" type="button"><i
+            class="far fa-save"></i></button>
       </div>
     </div>
 
-    <div class="card time-block">
-      <div class="row">
-        <div class="col hour">
-          <h2>10:00</h2>
-        </div>
-        <div class="col-8">
-          <textarea class="description" name="taskTodo" id="TaskTodo" placeholder="TaskTodo" cols="50"
-            rows="1"></textarea>
-        </div>
-        <div class="col">
-          <button class="saveBtn" type="button" class="btn"><img src="./Assets/img/save.svg" alt=""></button>
-        </div>
+    <!-- 10:00 -->
+    <div class="input-group mb-3">
+      <div class="input-group-prepend row">
+        <span class="input-group-text hour">10:00</span>
+      </div>
+      <textarea value="" id="task10" type="text" cols="100" rows="2"
+        class="form-control description textarea"></textarea>
+      <div class="input-group-append">
+        <button id="button10" class="btn btn-outline-secondary saveBtn" type="button"><i
+            class="far fa-save"></i></button>
       </div>
     </div>
 
-    <div class="card time-block">
-      <div class="row">
-        <div class="col hour">
-          <h2>11:00</h2>
-        </div>
-        <div class="col-8">
-          <textarea class="description" name="taskTodo" id="TaskTodo" placeholder="TaskTodo" cols="50"
-            rows="1"></textarea>
-        </div>
-        <div class="col">
-          <button class="saveBtn" type="button" class="btn"><img src="./Assets/img/save.svg" alt=""></button>
-        </div>
+    <!-- 11:00 -->
+    <div class="input-group mb-3">
+      <div class="input-group-prepend row">
+        <span class="input-group-text hour">11:00</span>
+      </div>
+      <textarea value="" id="task11" type="text" cols="100" rows="2"
+        class="form-control description textarea"></textarea>
+      <div class="input-group-append">
+        <button id="button11" class="btn btn-outline-secondary saveBtn" type="button"><i
+            class="far fa-save"></i></button>
       </div>
     </div>
 
-    <div class="card time-block">
-      <div class="row">
-        <div class="col hour">
-          <h2>12:00</h2>
-        </div>
-        <div class="col-8">
-          <textarea class="description" name="taskTodo" id="TaskTodo" placeholder="TaskTodo" cols="50"
-            rows="1"></textarea>
-        </div>
-        <div class="col">
-          <button class="saveBtn" type="button" class="btn"><img src="./Assets/img/save.svg" alt=""></button>
-        </div>
+    <!--12 pm-->
+    <div class="input-group mb-3">
+      <div class="input-group-prepend row">
+        <span class="input-group-text hour">12:00</span>
+      </div>
+      <textarea id="task12" value="" type="text" cols="100" rows="2"
+        class="form-control description textarea"></textarea>
+      <div class="input-group-append">
+        <button id="button12" class="btn btn-outline-secondary saveBtn" type="button"><i
+            class="far fa-save"></i></button>
       </div>
     </div>
 
-   <div class="card time-block">
-      <div class="row">
-        <div class="col hour">
-          <h2>13:00</h2>
-        </div>
-        <div class="col-8">
-          <textarea class="description" name="taskTodo" id="TaskTodo" placeholder="TaskTodo" cols="50"
-            rows="1"></textarea>
-        </div>
-        <div class="col">
-          <button class="saveBtn" type="button" class="btn"><img src="./Assets/img/save.svg" alt=""></button>
-        </div>
+    <!--13:00 pm-->
+    <div class="input-group mb-3">
+      <div class="input-group-prepend row">
+        <span class="input-group-text hour">13:00</span>
+      </div>
+      <textarea id="task13" value="" type="text" cols="100" rows="2"
+        class="form-control description textarea"></textarea>
+      <div class="input-group-append">
+        <button id="button13" class="btn btn-outline-secondary saveBtn" type="button"><i
+            class="far fa-save"></i></button>
       </div>
     </div>
 
-    <div class="card time-block">
-      <div class="row">
-        <div class="col hour">
-          <h2>14:00</h2>
+       <!--14:00-->
+       <div class="input-group mb-3">
+        <div class="input-group-prepend row">
+          <span class="input-group-text hour">14:00</span>
         </div>
-        <div class="col-8">
-          <textarea class="description" name="taskTodo" id="TaskTodo" placeholder="TaskTodo" cols="50"
-            rows="1"></textarea>
-        </div>
-        <div class="col">
-          <button class="saveBtn" type="button" class="btn"><img src="./Assets/img/save.svg" alt=""></button>
+        <textarea id="task14" value="" type="text" cols="100" rows="2" class="form-control description textarea"></textarea>
+        <div class="input-group-append">
+          <button id="button14" class="btn btn-outline-secondary saveBtn" type="button"><i
+              class="far fa-save"></i></button>
         </div>
       </div>
-    </div>
 
-   <div class="card time-block">
-      <div class="row">
-        <div class="col hour">
-          <h2>15:00</h2>
+      <!--15:00 pm-->
+      <div class="input-group mb-3">
+        <div class="input-group-prepend row">
+          <span class="input-group-text hour">15:00</span>
         </div>
-        <div class="col-8">
-          <textarea class="description" name="taskTodo" id="TaskTodo" placeholder="TaskTodo" cols="50"
-            rows="1"></textarea>
-        </div>
-        <div class="col">
-          <button class="saveBtn" type="button" class="btn"><img src="./Assets/img/save.svg" alt=""></button>
+        <textarea id="task15" value="" type="text" cols="100" rows="2" class="form-control description textarea"></textarea>
+        <div class="input-group-append">
+          <button id="buttom15" class="btn btn-outline-secondary saveBtn" type="button"><i
+              class="far fa-save"></i></button>
         </div>
       </div>
-    </div>
 
-    <div class="card time-block">
-      <div class="row">
-        <div class="col hour">
-          <h2>16:00</h2>
-        </div>
-        <div class="col-8">
-          <textarea class="description" name="taskTodo" id="TaskTodo" placeholder="TaskTodo" cols="50"
-            rows="1"></textarea>
-        </div>
-        <div class="col">
-          <button class="saveBtn" type="button" class="btn"><img src="./Assets/img/save.svg" alt=""></button>
-        </div>
-      </div>
+   <!--16:00 pm-->
+   <div class="input-group mb-3">
+    <div class="input-group-prepend row">
+      <span class="input-group-text hour">16:00</span>
     </div>
+    <textarea id="task16" value="" type="text" cols="100" rows="2" class="form-control description textarea"></textarea>
+    <div class="input-group-append">
+      <button id="button16" class="btn btn-outline-secondary saveBtn" type="button"><i
+          class="far fa-save"></i></button>
+    </div>
+  </div>
 
-<div class="card time-block">
-      <div class="row">
-        <div class="col hour">
-          <h2>17:00</h2>
+        <!-- 17:00-->
+        <div class="input-group mb-3">
+          <div class="input-group-prepend row">
+            <span class="input-group-text hour">17:00</span>
+          </div>
+          <textarea id="task17" value="" type="text" cols="100" rows="2" class="form-control description textarea"></textarea>
+          <div class="input-group-append">
+            <button id="button17" class="btn btn-outline-secondary saveBtn" type="button"><i
+                class="far fa-save"></i></button>
+          </div>
         </div>
-        <div class="col-8">
-          <textarea class="description" name="taskTodo" id="TaskTodo" placeholder="TaskTodo" cols="50"
-            rows="1"></textarea>
-        </div>
-        <div class="col">
-          <button class="saveBtn" type="button" class="btn"><img src="./Assets/img/save.svg" alt=""></button>
-        </div>
-      </div>
-    </div>
+  
 
 
   </div>
