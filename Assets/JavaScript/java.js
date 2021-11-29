@@ -46,8 +46,6 @@ $(".saveBtn").click(function() {
     
 });
 
-
-    // Enter and Display Events
 function renderText () {   
     var saveEventText9 = JSON.parse(localStorage.getItem("9:00 am"));
     $("#9").val("");
